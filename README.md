@@ -1,4 +1,6 @@
-# LA-GCN
+# LA-GCN 
+
+[![License](https://img.shields.io/github/license/thudm/cogdl)](https://github.com/asarigun/LA-GCN/blob/main/LICENSE)
 
 This is tensorflow implementation of Learnable Aggregators for Graph Convolutional Networks.
 
