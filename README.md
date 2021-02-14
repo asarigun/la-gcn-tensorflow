@@ -1,5 +1,7 @@
 # LA-GCN
+
 This is tensorflow implementation of Learnable Aggregators for Graph Convolutional Networks.
+
 Learnable Aggregator for GCN (LA-GCN) by introducing a shared auxiliary model that provides a
 customized schema in neighborhood aggregation. Under this framework, a new model proposed called
 LA-GCN(Mask) consisting of a new aggregator function, mask aggregator. The auxiliary model
