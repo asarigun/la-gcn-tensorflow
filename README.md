@@ -64,7 +64,7 @@ Thanks for their original tensorflow implementation of GCN and LA-GCN:
 ```
 
 ```
-@inproceedings{kipf2017semi,
+@inproceedings{
   title={A Feature-Importance-Aware and Robust Aggregator for GCN},
   author={Zhang, Li. and Lu, Haiping},
   booktitle={Conference on Information and Knowledge Management (CIKM)},
