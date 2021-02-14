@@ -25,7 +25,7 @@ python train.py
 ```
 You can also try out in colab if you don't have any requirements!
 
-![LA-GCN with Mask Aggregator](https://colab.research.google.com/drive/1XtLxuk0zJKxC0Ee2gMscqtAHaUIYLSH8?usp=sharing)
+(https://colab.research.google.com/drive/1XtLxuk0zJKxC0Ee2gMscqtAHaUIYLSH8?usp=sharing)
 ## Data
 
 In order to use your own data, you have to provide 
