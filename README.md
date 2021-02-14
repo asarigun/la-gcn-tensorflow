@@ -24,7 +24,7 @@ For official implementation  https://github.com/LiZhang-github/LA-GCN/tree/maste
 python train.py
 ```
 You can also try out in colab if you don't have any requirements!
-[![report]](https://dl.acm.org/doi/abs/10.1145/3340531.3411983) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XtLxuk0zJKxC0Ee2gMscqtAHaUIYLSH8?usp=sharing) 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XtLxuk0zJKxC0Ee2gMscqtAHaUIYLSH8?usp=sharing) 
 
 ## Data
 
