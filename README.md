@@ -18,10 +18,9 @@ For official implementation  https://github.com/LiZhang-github/LA-GCN/tree/maste
 ## Requirements
 * tensorflow_version 1.x
 
-## Running
+## Training
 
 ```bash
-cd gcn
 python train.py
 ```
 
