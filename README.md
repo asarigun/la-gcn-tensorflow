@@ -8,6 +8,8 @@ attention. This mechanism learns to assign different importance to both nodes an
 which provides interpretable explanations for prediction and increases the model robustness.
 
 
+![LA-GCN with Mask Aggregator](https://github.com/asarigun/LA-GCN/blob/main/model_layer.jpg)
+
 Li  Zhang ,Haiping  Lu, https://dl.acm.org/doi/abs/10.1145/3340531.3411983(CIKM 2020) 
 
 For official implementation  https://github.com/LiZhang-github/LA-GCN/tree/master/code
