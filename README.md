@@ -2,15 +2,14 @@
 
 This is tensorflow implementation of Learnable Aggregators for Graph Convolutional Networks.
 
+![LA-GCN with Mask Aggregator](https://github.com/asarigun/LA-GCN/blob/main/model_layer.jpg)
+
 Learnable Aggregator for GCN (LA-GCN) by introducing a shared auxiliary model that provides a
 customized schema in neighborhood aggregation. Under this framework, a new model proposed called
 LA-GCN(Mask) consisting of a new aggregator function, mask aggregator. The auxiliary model
 learns a specific mask for each neighbor of a given node, allowing both node-level and feature-level 
 attention. This mechanism learns to assign different importance to both nodes and features for prediction, 
 which provides interpretable explanations for prediction and increases the model robustness.
-
-
-![LA-GCN with Mask Aggregator](https://github.com/asarigun/LA-GCN/blob/main/model_layer.jpg)
 
 Li  Zhang ,Haiping  Lu, https://dl.acm.org/doi/abs/10.1145/3340531.3411983(CIKM 2020) 
 
