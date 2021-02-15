@@ -1,8 +1,8 @@
-# LA-GCN 
+# Learnable Aggregator for Graph Convolutional Networks in TensorFlow 
 
 [![report](https://img.shields.io/badge/paper-report-red)](https://dl.acm.org/doi/abs/10.1145/3340531.3411983)  [![report](https://img.shields.io/badge/official-code-ff69b4)](https://github.com/LiZhang-github/LA-GCN/tree/master/code)  [![License](https://img.shields.io/github/license/thudm/cogdl)](https://github.com/asarigun/LA-GCN/blob/main/LICENSE)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XtLxuk0zJKxC0Ee2gMscqtAHaUIYLSH8?usp=sharing)
 
-This repository is tensorflow implementation of Learnable Aggregators for Graph Convolutional Networks.
+This repository is TensorFlow implementation of Learnable Aggregators for Graph Convolutional Networks.
 
 ![LA-GCN with Mask Aggregator](https://github.com/asarigun/LA-GCN/blob/main/model.jpg)
 
