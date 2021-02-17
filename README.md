@@ -55,10 +55,11 @@ You can choose between the following models:
 * `gcn_cheby`: Chebyshev polynomial version of graph convolutional network as described in (Michaël Defferrard, Xavier Bresson, Pierre Vandergheynst, [Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://arxiv.org/abs/1606.09375), NIPS 2016)
 * `dense`: Basic multi-layer perceptron that supports sparse inputs
 
-## Cite
+## Reference
 
-Thanks for their original tensorflow implementation of GCN and LA-GCN:
+[1] [Kipf & Welling, Semi-Supervised Classification with Graph Convolutional Networks, 2016](https://arxiv.org/abs/1609.02907)  [![report](https://img.shields.io/badge/Github-Repository-ff69b4)](https://github.com/tkipf/gcn)
 
+[2] [Zhang & Lu, A Feature-Importance-Aware and Robust Aggregator for GCN, CIKM 2020](https://dl.acm.org/doi/abs/10.1145/3340531.3411983)  [![report](https://img.shields.io/badge/official-code-yellow)](https://github.com/LiZhang-github/LA-GCN/tree/master/code)
 ```
 @inproceedings{kipf2017semi,
   title={Semi-Supervised Classification with Graph Convolutional Networks},
