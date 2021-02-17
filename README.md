@@ -60,20 +60,3 @@ You can choose between the following models:
 [1] [Kipf & Welling, Semi-Supervised Classification with Graph Convolutional Networks, 2016](https://arxiv.org/abs/1609.02907)  [![report](https://img.shields.io/badge/Github-Repository-ff69b4)](https://github.com/tkipf/gcn)
 
 [2] [Zhang & Lu, A Feature-Importance-Aware and Robust Aggregator for GCN, CIKM 2020](https://dl.acm.org/doi/abs/10.1145/3340531.3411983)  [![report](https://img.shields.io/badge/official-code-yellow)](https://github.com/LiZhang-github/LA-GCN/tree/master/code)
-```
-@inproceedings{kipf2017semi,
-  title={Semi-Supervised Classification with Graph Convolutional Networks},
-  author={Kipf, Thomas N. and Welling, Max},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  year={2017}
-}
-```
-
-```
-@inproceedings{
-  title={A Feature-Importance-Aware and Robust Aggregator for GCN},
-  author={Zhang, Li. and Lu, Haiping},
-  booktitle={Conference on Information and Knowledge Management (CIKM)},
-  year={2020}
-}
-```
