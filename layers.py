@@ -262,10 +262,10 @@ class gcnmask(Layer):
             mask0 = tf.nn.sigmoid(mask0)
             mask = tf.nn.dropout(mask0, 1-self.dropout)
             
-            self.mask.append(mask)
+            self.mask.append(mask) #mask aggregator
 
 
-            new_cen_nei = aa + tf.reduce_sum(mask * bb_nei, 0, keepdims=True)
+            new_cen_nei = aa + tf.reduce_sum(mask * bb_nei, 0, keepdims=True) #hadamard product of neighbors' feature vector and mask aggregator, then applying sum aggregator
             x_new.append(new_cen_nei)
        
         x_new = tf.squeeze(x_new)    
