@@ -1,6 +1,6 @@
 # Learnable Aggregator for Graph Convolutional Networks in TensorFlow 
 
-[![report](https://img.shields.io/badge/paper-report-red)](https://dl.acm.org/doi/abs/10.1145/3340531.3411983)  [![report](https://img.shields.io/badge/official-code-ff69b4)](https://github.com/LiZhang-github/LA-GCN/tree/master/code)  [![License](https://img.shields.io/github/license/thudm/cogdl)](https://github.com/asarigun/LA-GCN/blob/main/LICENSE)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XtLxuk0zJKxC0Ee2gMscqtAHaUIYLSH8?usp=sharing)
+[![report](https://img.shields.io/badge/Paper-Report-red)](https://dl.acm.org/doi/abs/10.1145/3340531.3411983)  [![report](https://img.shields.io/badge/Official-Code-ff69b4)](https://github.com/LiZhang-github/LA-GCN/tree/master/code)  [![License](https://img.shields.io/github/license/thudm/cogdl)](https://github.com/asarigun/LA-GCN/blob/main/LICENSE)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XtLxuk0zJKxC0Ee2gMscqtAHaUIYLSH8?usp=sharing)
 
 TensorFlow implementation of Learnable Aggregator for Graph Convolutional Networks.
 
@@ -57,6 +57,8 @@ You can choose between the following models:
 
 ## Reference
 
-[1] [Kipf & Welling, Semi-Supervised Classification with Graph Convolutional Networks, 2016](https://arxiv.org/abs/1609.02907)  [![report](https://img.shields.io/badge/Github-Repository-ff69b4)](https://github.com/tkipf/gcn)
+[1] [Zhang & Lu, A Feature-Importance-Aware and Robust Aggregator for GCN, CIKM 2020](https://dl.acm.org/doi/abs/10.1145/3340531.3411983)  [![report](https://img.shields.io/badge/Official-Code-yellow)](https://github.com/LiZhang-github/LA-GCN/tree/master/code)
 
-[2] [Zhang & Lu, A Feature-Importance-Aware and Robust Aggregator for GCN, CIKM 2020](https://dl.acm.org/doi/abs/10.1145/3340531.3411983)  [![report](https://img.shields.io/badge/official-code-yellow)](https://github.com/LiZhang-github/LA-GCN/tree/master/code)
+[2] [Kipf & Welling, Semi-Supervised Classification with Graph Convolutional Networks, 2016](https://arxiv.org/abs/1609.02907)  [![report](https://img.shields.io/badge/Official-Code-ff69b4)](https://github.com/tkipf/gcn)
+
+
