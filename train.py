@@ -12,7 +12,10 @@ import pandas as pd
 import pickle
 import pdb
 
-
+"""
+    For the hyperparameters and be sure the results you can look at the experiments section of paper at https://dl.acm.org/doi/abs/10.1145/3340531.3411983
+    
+"""    
 # Settings
 flags = tf.app.flags
 FLAGS = flags.FLAGS
