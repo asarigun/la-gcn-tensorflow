@@ -1,6 +1,6 @@
 # Learnable Aggregator for Graph Convolutional Networks in TensorFlow
 
-<p align="center"><img width="40%" src="https://raw.githubusercontent.com/ivy-dl/ivy-dl.github.io/master/img/externally_linked/logos/supported/tensorflow_logo.png"></p>
+<p align="center"><img width="30%" src="https://raw.githubusercontent.com/ivy-dl/ivy-dl.github.io/master/img/externally_linked/logos/supported/tensorflow_logo.png"></p>
 
 [![report](https://img.shields.io/badge/Paper-Report-red)](https://dl.acm.org/doi/abs/10.1145/3340531.3411983)  [![report](https://img.shields.io/badge/Official-Code-ff69b4)](https://github.com/LiZhang-github/LA-GCN/tree/master/code)  [![report](https://img.shields.io/badge/Poster-NeurIPS2019-brown)](https://grlearning.github.io/papers/134.pdf)  [![License](https://img.shields.io/github/license/thudm/cogdl)](https://github.com/asarigun/LA-GCN/blob/main/LICENSE)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XtLxuk0zJKxC0Ee2gMscqtAHaUIYLSH8?usp=sharing)
 
