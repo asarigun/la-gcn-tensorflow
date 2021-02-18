@@ -28,6 +28,8 @@ python train.py
 ```
 You can also try out in colab if you don't have any requirements!  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XtLxuk0zJKxC0Ee2gMscqtAHaUIYLSH8?usp=sharing)
 
+Note: Since random inits, your training results may not exact the same as reported in the paper!
+
 ## Data
 
 In order to use your own data, you have to provide 
