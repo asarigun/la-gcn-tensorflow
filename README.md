@@ -4,7 +4,7 @@
 
 <p align="center"><img width="20%" src="https://github.com/asarigun/LA-GCN/blob/main/tensorflow_logo.png"></p>
 
-TensorFlow implementation of Learnable Aggregator for Graph Convolutional Networks.
+Implementation of Learnable Aggregator for Graph Convolutional Networks in TensorFlow.
 
 ![LA-GCN with Mask Aggregator](https://github.com/asarigun/LA-GCN/blob/main/model.jpg)
 
