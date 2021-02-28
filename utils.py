@@ -62,6 +62,7 @@ def load_data(fastgcn_setting, dataset_str, train_percente, attack_dimension,tra
 
     features[test_idx_reorder, :] = features[test_idx_range, :]
     adj = nx.adjacency_matrix(nx.from_dict_of_lists(graph))
+    #print(adj)
     labels = np.vstack((ally, ty))
     labels[test_idx_reorder, :] = labels[test_idx_range, :]
 
@@ -111,6 +112,8 @@ def load_data(fastgcn_setting, dataset_str, train_percente, attack_dimension,tra
     add_all = []
     for i in range(adj.shape[0]):
         add_all.append(adj[i].nonzero()[1])
+        #print(i)
+        #print(add_all)
 
     if attack_dimension > 0:     
         print('====the attacked dimention====', attack_dimension)  
