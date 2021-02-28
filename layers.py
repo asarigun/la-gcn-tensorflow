@@ -252,7 +252,7 @@ class gcnmask(Layer):
         for i in range(len(self.add_all)):
 
             aa = tf.gather(x,[i])
-
+            #print(aa)
             aa_tile = tf.tile(aa, [len(self.add_all[i]), 1]) # expand central
             #bb_nei = tf.expand_dims(x[self.add_all[i]],0)
             bb_nei = tf.gather(x,self.add_all[i])
