@@ -252,12 +252,18 @@ class gcnmask(Layer):
         for i in range(len(self.add_all)):
 
             aa = tf.gather(x,[i])
+            #print("Loading aa:")
             #print(aa)
             aa_tile = tf.tile(aa, [len(self.add_all[i]), 1]) # expand central
+            #print("Loading aa_tile:")
+            #print(aa_tile)
             #bb_nei = tf.expand_dims(x[self.add_all[i]],0)
             bb_nei = tf.gather(x,self.add_all[i])
+            #print("Loading bb_nei:")
+            #print(bb_nei)
             cen_nei = tf.concat([aa_tile, bb_nei],1)
-          
+            #print("Loading cen_nei:")
+            #print(cen_nei)
             mask0 = dot(cen_nei, self.vars['weights_mask0'], sparse = self.sparse_inputs)
             mask0 = tf.nn.sigmoid(mask0)
             mask = tf.nn.dropout(mask0, 1-self.dropout)
