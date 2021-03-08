@@ -114,7 +114,8 @@ def load_data(fastgcn_setting, dataset_str, train_percente, attack_dimension,tra
         add_all.append(adj[i].nonzero()[1])
         #print(i)
         #print(add_all)
-
+    #print("Loading add_all:")
+    #print(add_all)
     if attack_dimension > 0:     
         print('====the attacked dimention====', attack_dimension)  
 
