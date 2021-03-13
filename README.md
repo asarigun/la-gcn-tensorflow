@@ -2,11 +2,11 @@
 
 [![report](https://img.shields.io/badge/Paper-Report-red)](https://dl.acm.org/doi/abs/10.1145/3340531.3411983)  [![report](https://img.shields.io/badge/Official-Code-ff69b4)](https://github.com/LiZhang-github/LA-GCN/tree/master/code)  [![report](https://img.shields.io/badge/Poster-NeurIPS2019-brown)](https://grlearning.github.io/papers/134.pdf)  [![License](https://img.shields.io/github/license/thudm/cogdl)](https://github.com/asarigun/LA-GCN/blob/main/LICENSE)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XtLxuk0zJKxC0Ee2gMscqtAHaUIYLSH8?usp=sharing)
 
-<p align="center"><img width="20%" src="https://github.com/asarigun/LA-GCN/blob/main/tensorflow_logo.png"></p>
+<p align="center"><img width="20%" src="https://github.com/asarigun/LA-GCN/blob/main/images/tensorflow_logo.png"></p>
 
 Implementation of Learnable Aggregator for Graph Convolutional Networks in TensorFlow.
 
-![LA-GCN with Mask Aggregator](https://github.com/asarigun/LA-GCN/blob/main/model.jpg)
+![LA-GCN with Mask Aggregator](https://github.com/asarigun/LA-GCN/blob/main/images/model.jpg)
 
 Learnable Aggregator for GCN (LA-GCN) by introducing a shared auxiliary model that provides a
 customized schema in neighborhood aggregation. Under this framework, a new model proposed called
