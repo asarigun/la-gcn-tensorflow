@@ -250,6 +250,10 @@ class gcnmask(Layer):
         #mask_gather = []
 
         for i in range(len(self.add_all)):
+            #print("Loading input:")
+            #print(x)
+            #print("Loading shape of input:)
+            #print(x.shape)
 
             aa = tf.gather(x,[i])
             #print("Loading aa:")
