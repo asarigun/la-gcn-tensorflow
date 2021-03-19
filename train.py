@@ -53,6 +53,10 @@ add_all, adj, features, y_train, y_val, y_test, train_mask, val_mask, test_mask 
                                                                                         k_att, FLAGS.attack_dimension,
                                                                                         FLAGS.train_jump)
 
+"""print("Loading features:")
+print(features)
+print("Loading features")"""
+
 # Some preprocessing
 
 features = preprocess_features(features,adj) ## type(features) is tuple
