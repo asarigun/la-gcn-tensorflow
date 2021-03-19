@@ -42,10 +42,53 @@ def load_data(fastgcn_setting, dataset_str, train_percente, attack_dimension,tra
                 objects.append(pkl.load(f))
 
     x, y, tx, ty, allx, ally, graph = tuple(objects)
+    """
+    Loads input data from gcn/data directory
+    ind.dataset_str.x => the feature vectors of the training instances as scipy.sparse.csr.csr_matrix object;
+    ind.dataset_str.tx => the feature vectors of the test instances as scipy.sparse.csr.csr_matrix object;
+    ind.dataset_str.allx => the feature vectors of both labeled and unlabeled training instances
+        (a superset of ind.dataset_str.x) as scipy.sparse.csr.csr_matrix object;
+    ind.dataset_str.y => the one-hot labels of the labeled training instances as numpy.ndarray object;
+    ind.dataset_str.ty => the one-hot labels of the test instances as numpy.ndarray object;
+    ind.dataset_str.ally => the labels for instances in ind.dataset_str.allx as numpy.ndarray object;
+    ind.dataset_str.graph => a dict in the format {index: [index_of_neighbor_nodes]} as collections.defaultdict
+        object;
+    ind.dataset_str.test.index => the indices of test instances in graph, for the inductive setting as list object.
+    All objects above must be saved using python pickle module.
+    :param dataset_str: Dataset name
+    :return: All data input files loaded (as well the training/test data).
+    """
+    """print("Loading x.shape")
+    print(x.shape[1])"""
+    #x.shape : (140, 1433)
+    """Loading y.shape
+    (140, 7)
+    Loading tx.shape
+    (1000, 1433)
+    Loading ty.shape
+    (1000, 7)
+    Loading allx.shape
+    (1708, 1433)
+    Loading ally.shape
+    (1708, 7)"""
+    """print("Loading y.shape")
+    print(y.shape)
+    print("Loading tx.shape")
+    print(tx.shape)
+    print("Loading ty.shape")
+    print(ty.shape)
+    print("Loading allx.shape")
+    print(allx.shape)
+    print("Loading ally.shape")
+    print(ally.shape)"""
 
 
     test_idx_reorder = parse_index_file("data/ind.{}.test.index".format(dataset_str))
+    """print("Loadingtest_idx_reorder")
+    print(test_idx_reorder)"""
     test_idx_range = np.sort(test_idx_reorder)
+    """print("Loading test_idx_range")
+    print(test_idx_range)"""
 
     if dataset_str == 'citeseer':
         # Fix citeseer dataset (there are some isolated nodes in the graph)
@@ -59,12 +102,26 @@ def load_data(fastgcn_setting, dataset_str, train_percente, attack_dimension,tra
         ty = ty_extended
 
     features = sp.vstack((allx, tx)).tolil()
+    """print("Loading shape of feat:")
+    print(features.shape)
+    print("Loading **********")
+    print(features[test_idx_range, :])"""
 
     features[test_idx_reorder, :] = features[test_idx_range, :]
+    """print("Loading features:")
+    print(features[test_idx_reorder, :])"""
+    """print("*******")
+    print("Loading features:")
+    print(features[test_idx_range, :])
+    print("*******")"""
     adj = nx.adjacency_matrix(nx.from_dict_of_lists(graph))
     #print(adj)
     labels = np.vstack((ally, ty))
+    """print("Labels:")
+    print(labels)"""
     labels[test_idx_reorder, :] = labels[test_idx_range, :]
+    """print("Loading labels:")
+    print(labels[test_idx_reorder, :])"""
 
     idx_test = test_idx_range.tolist()
 
@@ -98,6 +155,8 @@ def load_data(fastgcn_setting, dataset_str, train_percente, attack_dimension,tra
         idx_val = range(train_number, train_number+500)
 
     train_mask = sample_mask(idx_train, labels.shape[0]) # the training index is true, others is false
+    """print("Loading train_mask")
+    print(train_mask)"""
     val_mask = sample_mask(idx_val, labels.shape[0])
     test_mask = sample_mask(idx_test, labels.shape[0])
 
@@ -105,6 +164,8 @@ def load_data(fastgcn_setting, dataset_str, train_percente, attack_dimension,tra
     y_val = np.zeros(labels.shape)
     y_test = np.zeros(labels.shape)
     y_train[train_mask, :] = labels[train_mask, :]
+    """print("Loading y_train ")
+    print(y_train)"""
     y_val[val_mask, :] = labels[val_mask, :]
     y_test[test_mask, :] = labels[test_mask, :]
     
