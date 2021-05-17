@@ -7,6 +7,12 @@ flags = tf.app.flags
 FLAGS = flags.FLAGS
 _LAYER_UIDS = {}
 
+##########################################################################
+# Graph Convolutional Layers Adapted From https://github.com/tkipf/gcn   #
+##########################################################################
+
+
+
 def get_layer_uid(layer_name=''):
     """Helper function, assigns unique layer IDs."""
     if layer_name not in _LAYER_UIDS:
@@ -199,6 +205,12 @@ class GraphConvolution(Layer):
         return self.act(output)
 
 
+####################################################################
+# Learnable Aggregator for Graph Convolutional Layers Adapted      #
+# from https://github.com/LiZhang-github/LA-GCN/tree/master/code   #                        
+####################################################################  
+    
+    
 class gcnmask(Layer):
     """Graph convolution layer."""
     def __init__(self, add_all, input_dim, output_dim, placeholders, dropout=0.,
