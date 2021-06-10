@@ -11,6 +11,10 @@ import sys
 import pdb
 import tensorflow as tf
 
+##############################################
+# Modified from https://github.com/tkipf/gcn #
+##############################################
+
 # flags = tf.app.flags
 # FLAGS = flags.FLAGS
 
