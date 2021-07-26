@@ -86,7 +86,7 @@ You can choose between the following models:
 
 ## Citation
 
-```
+```bibtex
 @inproceedings{zhang2020feature,
   title={A Feature-Importance-Aware and Robust Aggregator for GCN},
   author={Zhang, Li and Lu, Haiping},
@@ -95,7 +95,7 @@ You can choose between the following models:
   year={2020}
 }
 ```
-```
+```bibtex
 @article{kipf2016semi,
   title={Semi-supervised classification with graph convolutional networks},
   author={Kipf, Thomas N and Welling, Max},
